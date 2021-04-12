@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
@@ -15,25 +16,33 @@
     <title>Forecast Viewer</title>
   </head>
   <body>
+    <nav class="navbar navbar-light bg-success text-center">
+      <span class="navbar-brand mb-0 h1 font-weight-bold text-white">Forecast Viewer</span>
+    </nav>
+
+    <br>
+    <br>
+
     <div class="container">
-       <div class=" jumbotron-fluid bg-primary text-white text-center">
+       <div class=" jumbotron-fluid bg-warning text-dark text-center">
          <div class="container">
-           <h1 class="display-4 ">Forecast Viewer</h1>
+           <h1 class="display-4 ">Todays Forecast</h1>
          </div>
        </div>
 
        <div class="row">
-        <div class="col-3 m-2 bg-light">
+        <div class="col-3 m-2 bg-success">
           <h3>Search by city:</h3> 
           <div class="input-group mb-2">
             <input type="text" class="form-control" id="city-input" aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <button id ="add-city" class="btn btn-outline-secondary bg-primary" type="button"><i class="fas fa-search"></i></button> 
+              <button id ="add-city" class="btn btn-outline-secondary bg-warning" type="button"><ion-icon name="search-outline"></ion-icon></button> 
             </div>
           </div>
-          <div class="card" style="width: 15rem;">
+          <div class="card bg-warning" style="width: 15rem;">
             <ul id="city-list" class="list-group list-group-flush">
             </ul>
+            <button class="clearBtn" id=clearBtn>Clear search history</button> </br>
           </div>
         </div>
         <div class="col-8 m-2">
@@ -45,7 +54,7 @@
           </div>
           <br>
           <div class="row-12">
-            <h3>5-Day Forecast:</h3>
+            <h4>5-Day Forecast:</h4>
           </div>
           <br>
           <div id ="boxes" class="row">   

@@ -1,21 +1,13 @@
-ion-icon {
-    color:whitesmoke;
-    --ionicon-stroke-width: 80px;
-  }
-
-.green{
-  background-color: green;
-}
-.yellow{
-  background-color: yellow;
-}
-.orange{
-  background-color: orange;
-}
-.red{
-  background-color: red;
+.navbar-brand{
+  justify-content: center;
+  margin-left: 45vw;
 }
 
-.purple{
-  background-color: purple;
+.clearBtn{
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+h3{
+  color: white;
 }
